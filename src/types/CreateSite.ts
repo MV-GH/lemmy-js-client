@@ -37,12 +37,10 @@ export interface CreateSite {
   rate_limit_search_per_second?: number;
   federation_enabled?: boolean;
   federation_debug?: boolean;
-  federation_worker_count?: number;
   captcha_enabled?: boolean;
   captcha_difficulty?: string;
   allowed_instances?: Array<string>;
   blocked_instances?: Array<string>;
   taglines?: Array<string>;
   registration_mode?: RegistrationMode;
-  auth: string;
 }

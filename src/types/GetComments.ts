@@ -9,12 +9,13 @@ export interface GetComments {
   type_?: ListingType;
   sort?: CommentSortType;
   max_depth?: number;
-  page?: number;
-  limit?: number;
+  page?: /* integer */ number;
+  limit?: /* integer */ number;
   community_id?: CommunityId;
   community_name?: string;
   post_id?: PostId;
   parent_id?: CommentId;
   saved_only?: boolean;
-  auth?: string;
+  liked_only?: boolean;
+  disliked_only?: boolean;
 }

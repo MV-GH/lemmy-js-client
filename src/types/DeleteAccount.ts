@@ -2,5 +2,5 @@
 
 export interface DeleteAccount {
   password: string;
-  auth: string;
+  delete_content: boolean;
 }
